@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Header */
+/* #region */
+nav {
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    z-index: 998;
+  }
+  
+  nav .logo {
+    font-size: 2rem;
+    padding: 0.6rem;
+    padding-left: 2rem;
+    color: #892482;
+  }
+  
+  nav i {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #892482;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    nav i {
+      top: -100rem;
+    }
+  }
+  
+  ul {
+    list-style-type: none;
+    position: absolute;
+    top: -30rem;
+    width: 100%;
+    right: 0;
+    z-index: 998;
+    -webkit-transition: top 0.5s;
+    transition: top 0.5s;
+    background: #ffffff;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .form {
+        width: 500px;
+    }
+    ul {
+      z-index: 999;
+      top: 0;
+      right: 0;
+      width: auto;
+      background: transparent;
+    }
+  }
+  
+  ul li {
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    ul li {
+      padding: 0.8rem;
+      display: inline;
+      -webkit-transform: rotate(-180deg);
+              transform: rotate(-180deg);
+    }
+  }
+  
+  ul li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #892482;
+    font-size: 1.6rem;
+  }
+
+/* #region */
+
+.auth-container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 72%, 0 95%);
+    background: #892482;
+    flex-direction: column;
+    position: relative;
+}
+.form {
+    position: absolute;
+    top: 100px;
+}
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+.form input {
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 20%;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+.form button {
+    width: 20%;
+    margin-top: 15px;
+    margin-left: 40%;
+    background: #ffffff;
+    border: none;
+    color: #892482;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+.form input:focus, .form button:focus {
+    outline: none;
+}
+.auth-container p {
+    color: #ffffff;
+    text-align: center;
+}
+.auth-container p a {
+    color: #ffffff;
+}
